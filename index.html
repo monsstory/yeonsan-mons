@@ -202,132 +202,93 @@
       display: inline-block;
     }
 
-    /* 신규 카테고리: 어른 남자들의 놀이터 (VIP 연산식 스타일) */
+    /* 어른 남자들의 놀이터 (GIF 최적화 레이아웃) */
     .vip-showcase {
-      background: radial-gradient(circle at 50% 0%, rgba(243, 198, 105, 0.16), rgba(14, 18, 30, 0.98) 55%), #0c101b;
-      border: 1px solid rgba(243, 198, 105, 0.42);
-      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(243, 198, 105, 0.11) 0%, #11141e 38%, #0d0f17 100%);
+      border: 1px solid rgba(243, 198, 105, 0.36);
+      border-radius: 18px;
       overflow: hidden;
       text-align: center;
-      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
-      position: relative;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
     }
 
-    .vip-top {
-      padding: 28px 18px 22px;
-      border-bottom: 1px solid rgba(243, 198, 105, 0.2);
+    .vip-header {
+      padding: 20px 16px 16px;
     }
 
-    .vip-crown-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 16px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, rgba(243, 198, 105, 0.22), rgba(224, 159, 62, 0.12));
-      border: 1px solid rgba(243, 198, 105, 0.55);
+    .vip-style-label {
+      font-size: 0.88rem;
+      font-weight: 700;
       color: var(--accent);
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      margin-bottom: 10px;
-    }
-
-    .vip-style-name {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: #f6d58e;
-      letter-spacing: 0.04em;
-      padding-bottom: 10px;
-      margin: 0 auto 14px;
-      max-width: 240px;
-      border-bottom: 1px solid rgba(243, 198, 105, 0.35);
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
     }
 
     .vip-main-title {
-      font-size: 1.85rem;
+      font-size: 1.55rem;
       font-weight: 900;
       line-height: 1.25;
       letter-spacing: -0.02em;
-      background: linear-gradient(180deg, #fff3cf 0%, #f3c669 52%, #c98628 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.65));
-      margin-bottom: 8px;
+      color: #fff2cc;
+      margin-bottom: 6px;
     }
 
     .vip-sub-copy {
-      font-size: 0.96rem;
-      font-weight: 700;
-      color: #f2f4fa;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--muted);
     }
 
-    .vip-visual {
-      position: relative;
+    .vip-media {
       width: 100%;
-      background: #111522;
-      overflow: hidden;
+      background: #090b10;
+      border-top: 1px solid rgba(243, 198, 105, 0.16);
+      border-bottom: 1px solid rgba(243, 198, 105, 0.16);
     }
 
-    .vip-visual img {
+    .vip-media img {
       width: 100%;
-      max-height: 540px;
-      object-fit: cover;
-      object-position: center 22%;
+      max-height: none;
+      object-fit: contain;
     }
 
-    .vip-bottom {
-      padding: 22px 18px 26px;
-      background: linear-gradient(180deg, #0e1320 0%, #090c14 100%);
+    .vip-footer {
+      padding: 18px 16px 22px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
     }
 
-    .vip-member-box {
+    .vip-point-box {
       width: 100%;
-      max-width: 620px;
-      padding: 15px 16px;
-      border-radius: 14px;
-      background: rgba(15, 21, 35, 0.92);
-      border: 1.5px solid rgba(243, 198, 105, 0.65);
-      box-shadow: 0 0 22px rgba(243, 198, 105, 0.14);
+      max-width: 600px;
+      padding: 13px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(243, 198, 105, 0.45);
     }
 
-    .vip-member-highlight {
-      font-size: 1rem;
+    .vip-point-title {
+      font-size: 0.95rem;
       font-weight: 800;
       color: var(--accent);
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
-    .vip-member-desc {
-      font-size: 0.94rem;
+    .vip-point-text {
+      font-size: 0.92rem;
       font-weight: 600;
       color: var(--text);
     }
 
-    .vip-gold-pill {
+    .vip-care-badge {
       display: inline-block;
-      padding: 8px 22px;
+      padding: 7px 18px;
       border-radius: 999px;
-      background: linear-gradient(135deg, #f6d37c, #d49635);
-      color: #14120e;
-      font-size: 0.92rem;
-      font-weight: 900;
-      letter-spacing: -0.01em;
-      box-shadow: 0 6px 18px rgba(224, 159, 62, 0.3);
-    }
-
-    .vip-reserve-note {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.55;
-    }
-
-    .vip-reserve-note strong {
-      color: var(--accent);
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #121318;
+      font-size: 0.88rem;
       font-weight: 800;
     }
 
@@ -572,33 +533,26 @@
       </div>
     </div>
 
-    <!-- 신규 카테고리: 어른 남자들의 놀이터 (코스 안내 위) -->
+    <!-- 어른 남자들의 놀이터 섹션 (코스 안내 위) -->
     <section id="playground">
       <h2 class="section-title">어른 남자들의 놀이터</h2>
       <div class="vip-showcase">
-        <div class="vip-top">
-          <span class="vip-crown-tag">VIP</span>
-          <p class="vip-style-name">연산식 스타일</p>
+        <div class="vip-header">
+          <p class="vip-style-label">연산식 스타일</p>
           <h3 class="vip-main-title">어른 남자들의 놀이터</h3>
           <p class="vip-sub-copy">여유로운 힐링과 특별한 초이스 · 최고만을 위한 공간</p>
         </div>
 
-        <div class="vip-visual">
-          <img src="images/playground-main.png" alt="연산식 스타일 어른 남자들의 놀이터 프라이빗 VIP 멤버 케어" />
+        <div class="vip-media">
+          <img src="images/playground-style.gif" alt="연산동 알통실장 어른 남자들의 놀이터" />
         </div>
 
-        <div class="vip-bottom">
-          <div class="vip-member-box">
-            <p class="vip-member-highlight">[All 고정 멤버들만] 검증된 퀄리티 · 확실한 차이</p>
-            <p class="vip-member-desc">외모와 마인드가 다른 여유로운 만남</p>
+        <div class="vip-footer">
+          <div class="vip-point-box">
+            <p class="vip-point-title">[All 고정 멤버들만] 검증된 퀄리티 · 확실한 차이</p>
+            <p class="vip-point-text">외모와 마인드가 다른 여유로운 만남</p>
           </div>
-
-          <span class="vip-gold-pill">프라이빗 VIP 멤버 케어 · 1:1 맞춤 만족</span>
-
-          <p class="vip-reserve-note">
-            <strong>알통실장 ☎ 문의 &amp; 예약 · 24시간 연중무휴</strong><br />
-            최고의 서비스와 편안함으로 모십니다
-          </p>
+          <span class="vip-care-badge">프라이빗 VIP 멤버 케어 · 1:1 맞춤 만족</span>
         </div>
       </div>
     </section>
