@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>부산 연산동 프라이빗 룸 · 연산스타일 알통실장</title>
-  <meta name="description" content="부산 연산동 연산역 5번출구 인근 부산 연산동 프라이빗 룸 · 연산스타일 알통실장 안내. 쾌적한 프라이빗 룸 완비, A·B·C 코스 안내, 착한 가격 착한 서비스, 전담 예약 케어, 전화 010-2604-9951, 텔레그램 @monsstory, 카톡 오픈채팅 연결." />
-  <meta name="keywords" content="부산 연산동 프라이빗 룸, 연산스타일 알통실장, 어른 남자들의 놀이터, 연산역 5번출구, 연산동 코스 안내, 프라이빗 케어" />
+  <meta name="description" content="부산 연산동 연산역 5번출구 인근 프라이빗 룸 예약 및 이용 안내. 만 19세 이상 성인 대상 예약제 운영, A·B·C 코스 구성 안내, 전화 010-2604-9951, 텔레그램 @monsstory, 카카오톡 오픈채팅 연결." />
+  <meta name="keywords" content="부산 연산동 프라이빗 룸, 연산스타일 알통실장, 연산역 5번출구, 연산동 예약 안내, 라운지 코스 안내" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="부산 연산동 프라이빗 룸 · 연산스타일 알통실장" />
-  <meta property="og:description" content="착한 가격 착한 서비스 · 부산 연산동 프라이빗 룸 · 연산스타일 알통실장 (연산역 5번출구 · 프라이빗 예약제 운영) · 010-2604-9951 · 텔레그램 @monsstory" />
+  <meta property="og:description" content="만 19세 이상 성인 대상 예약 안내 · 부산 연산동 연산역 5번출구 · 010-2604-9951 · 텔레그램 @monsstory" />
   <meta property="og:image" content="images/hero-lounge-welcome.gif" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,7 +35,7 @@
 
     html {
       scroll-behavior: smooth;
-      font-size: 130%; /* 전체 폰트 크기 약 1.3배 확대 */
+      font-size: 130%;
     }
 
     body {
@@ -116,9 +116,21 @@
       color: var(--accent);
     }
 
-    /* 히어로 & 1.5배 확대 배너 */
+    /* 성인 안내 바 */
+    .age-notice {
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    /* 히어로 & 배너 */
     .hero {
-      padding: 28px 0 24px;
+      padding: 24px 0 24px;
       text-align: center;
     }
 
@@ -168,13 +180,8 @@
 
     .banner-wrap img {
       width: 100%;
-      transform: scale(1.5); /* 배너 크기 1.5배 확대 */
-      transform-origin: center center;
-    }
-
-    .banner-clip {
-      overflow: hidden;
-      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
 
     /* 섹션 공통 */
@@ -202,7 +209,7 @@
       display: inline-block;
     }
 
-    /* 어른 남자들의 놀이터 (GIF 최적화 레이아웃) */
+    /* 라운지 공간 안내 섹션 */
     .vip-showcase {
       background: linear-gradient(180deg, rgba(243, 198, 105, 0.11) 0%, #11141e 38%, #0d0f17 100%);
       border: 1px solid rgba(243, 198, 105, 0.36);
@@ -248,7 +255,7 @@
 
     .vip-media img {
       width: 100%;
-      max-height: none;
+      height: auto;
       object-fit: contain;
     }
 
@@ -349,7 +356,7 @@
       line-height: 1.55;
     }
 
-    /* 프라이빗 케어 섹션 */
+    /* 공간 및 운영 안내 섹션 */
     .care-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -381,8 +388,6 @@
       height: 100%;
       object-fit: cover;
       object-position: top center;
-      transform: scale(1.18); /* 프라이빗 케어 사진 확대 */
-      transform-origin: center top;
     }
 
     .care-caption {
@@ -511,48 +516,50 @@
     <div class="header-inner">
       <a href="#top" class="brand">연산동 알통실장</a>
       <nav aria-label="주요 메뉴">
-        <a href="#playground">어른 남자들의 놀이터</a>
+        <a href="#playground">라운지 안내</a>
         <a href="#course">코스 안내</a>
-        <a href="#care">프라이빗 케어</a>
+        <a href="#care">운영 안내</a>
         <a href="#location">오시는 길</a>
       </nav>
     </div>
   </header>
 
   <main id="top" class="container">
+    <div class="age-notice" role="note">
+      본 페이지는 만 19세 이상 성인을 대상으로 한 매장 위치 및 예약 상담 안내 페이지입니다.
+    </div>
+
     <!-- 히어로 & 배너 -->
     <div class="hero">
-      <span class="badge">착한 가격 착한 서비스</span>
+      <span class="badge">예약제 운영 · 현장 안내</span>
       <h1>부산 연산동 프라이빗 룸</h1>
       <p class="hero-manager">연산스타일 알통실장</p>
-      <p class="subtitle">(연산역 5번출구 · 프라이빗 예약제 운영)</p>
+      <p class="subtitle">(연산역 5번출구 · 사전 예약 상담 운영)</p>
       <div class="banner-wrap">
-        <div class="banner-clip">
-          <img src="images/hero-lounge-welcome.gif" alt="부산 연산동 프라이빗 룸 연산스타일 알통실장 메인 배너" />
-        </div>
+        <img src="images/hero-lounge-welcome.gif" alt="부산 연산동 프라이빗 룸 연산스타일 알통실장 메인 배너" />
       </div>
     </div>
 
-    <!-- 어른 남자들의 놀이터 섹션 (코스 안내 위) -->
+    <!-- 라운지 공간 안내 섹션 -->
     <section id="playground">
-      <h2 class="section-title">어른 남자들의 놀이터</h2>
+      <h2 class="section-title">라운지 공간 안내</h2>
       <div class="vip-showcase">
         <div class="vip-header">
-          <p class="vip-style-label">연산식 스타일</p>
-          <h3 class="vip-main-title">어른 남자들의 놀이터</h3>
-          <p class="vip-sub-copy">품격 있는 모임과 여유로운 휴식 · 프라이빗 전용 공간</p>
+          <p class="vip-style-label">연산역 인근</p>
+          <h3 class="vip-main-title">프라이빗 라운지 안내</h3>
+          <p class="vip-sub-copy">모임 및 예약 문의 · 단독 룸 공간 구성</p>
         </div>
 
         <div class="vip-media">
-          <img src="images/lounge-gathering-02.gif" alt="연산동 알통실장 어른 남자들의 놀이터" />
+          <img src="images/lounge-gathering-02.gif" alt="연산동 알통실장 라운지 공간 안내" />
         </div>
 
         <div class="vip-footer">
           <div class="vip-point-box">
-            <p class="vip-point-title">[프라이빗 룸 완비] 쾌적한 시설 · 세심한 의전</p>
-            <p class="vip-point-text">회식·비즈니스·모임까지 품격 있는 자리</p>
+            <p class="vip-point-title">[단독 룸 구성] 사전 예약제로 운영되는 공간</p>
+            <p class="vip-point-text">인원 및 시간대별 이용 조건은 문의 시 안내</p>
           </div>
-          <span class="vip-care-badge">프라이빗 VIP 룸 안내 · 1:1 전담 예약 케어</span>
+          <span class="vip-care-badge">사전 예약 상담 안내</span>
         </div>
       </div>
     </section>
@@ -566,7 +573,7 @@
             <span class="course-name">A코스</span>
             <span class="course-time">70분</span>
           </div>
-          <p class="course-desc">양주 + 맥주 + 스페셜 안주 세트 (상세 구성 유선 문의)</p>
+          <p class="course-desc">기본 주류 및 안주 구성 (세부 항목은 예약 문의 시 안내)</p>
         </article>
 
         <article class="course-card featured">
@@ -574,7 +581,7 @@
             <span class="course-name">B코스</span>
             <span class="course-time">100분</span>
           </div>
-          <p class="course-desc">양주 + 맥주 + 스페셜 안주 세트 (상세 구성 유선 문의)</p>
+          <p class="course-desc">기본 주류 및 안주 구성 (세부 항목은 예약 문의 시 안내)</p>
         </article>
 
         <article class="course-card">
@@ -582,32 +589,32 @@
             <span class="course-name">C코스</span>
             <span class="course-time">120분</span>
           </div>
-          <p class="course-desc">양주 + 맥주 + 스페셜 안주 세트 (상세 구성 유선 문의)</p>
+          <p class="course-desc">기본 주류 및 안주 구성 (세부 항목은 예약 문의 시 안내)</p>
         </article>
       </div>
     </section>
 
-    <!-- 프라이빗 케어 섹션 -->
+    <!-- 운영 안내 섹션 -->
     <section id="care">
-      <h2 class="section-title">프라이빗 케어</h2>
+      <h2 class="section-title">운영 안내</h2>
       <div class="care-grid">
         <div class="care-card">
           <div class="care-img-box">
-            <img src="images/care-1.png" alt="연산동 알통실장 프라이빗 케어 1" />
+            <img src="images/care-1.png" alt="연산동 알통실장 예약 안내 1" />
           </div>
-          <div class="care-caption">1:1 전담 예약 케어</div>
+          <div class="care-caption">사전 예약 접수</div>
         </div>
         <div class="care-card">
           <div class="care-img-box">
-            <img src="images/care-2.png" alt="연산동 알통실장 프라이빗 케어 2" />
+            <img src="images/care-2.png" alt="연산동 알통실장 이용 안내 2" />
           </div>
-          <div class="care-caption">착한 가격 착한 서비스</div>
+          <div class="care-caption">코스 및 이용 조건 안내</div>
         </div>
         <div class="care-card">
           <div class="care-img-box">
-            <img src="images/care-3.png" alt="연산동 알통실장 프라이빗 케어 3" />
+            <img src="images/care-3.png" alt="연산동 알통실장 공간 안내 3" />
           </div>
-          <div class="care-caption">편안한 프라이빗 공간</div>
+          <div class="care-caption">연산역 5번출구 인근 위치</div>
         </div>
       </div>
     </section>
@@ -645,7 +652,7 @@
   <footer>
     <div class="container">
       <p><strong>부산 연산동 프라이빗 룸 · 연산스타일 알통실장</strong> (연산역 5번출구)</p>
-      <p>문의: 010-2604-9951 · 텔레그램: @monsstory</p>
+      <p>만 19세 이상 이용 대상 · 문의: 010-2604-9951 · 텔레그램: @monsstory</p>
     </div>
   </footer>
 
